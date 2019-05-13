@@ -4,6 +4,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         window.onload=function(){
 
             //登录页面跳转状态
@@ -17,10 +32,8 @@
                             time: 4000,
                         });
                     });
-            }else{
-                $(".cart-list").href="../shopping_trolley/shopping_trolley.html"
-            };
             }
+
             $.ajax({
                 url:"../server/checkeLogin.php",
             }).then(function(res){
