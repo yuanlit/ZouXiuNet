@@ -1,0 +1,29 @@
+#main .home_find .ul_find{
+width: 1200px;
+margin: 0 auto;
+padding: 0 0 20px;
+}
+#main .home_find .ul_find>li{
+float: left;
+width: 287px;
+margin: 0 17px 20px 0;
+position:relative;
+}
+#main .home_find .ul_find>li:nth-child(4n){
+margin: 0 0 20px 0;
+}
+#main .home_find .ul_find>li>a{
+width:100%;
+height:100%;
+}
+#main .home_find .ul_find>li>a>img{
+display:block;
+}
+#main .home_find .ul_find>li>a>p{
+position: absolute;
+left: 0;
+top: 0;
+width: 285px;
+height: 488px;
+border: 1px solid #efefef;
+}

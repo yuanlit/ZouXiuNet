@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录-走秀网</title>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/login_pwdServer.js"></script>
+    <!--引进表单验证的库-->
+    <script src="js/lib/jquery-validation/jquery.validate.js"></script>
+    <!--引进验证码的库-->
+    <script src="js/lib/jquery.idcode.js"></script>
+    <!--引进弹出层-->
+    <script src="./js/lib/layer-v3.1.1/layer.js"></script>
+    <!--引进验证表单时,提示信息的库,包含全世界语言,选择中文-->
+    <script src="js/lib/jquery-validation/localization/messages_zh.js"></script>
+    <!--引进验证码的样式库-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.idcode.css">
+    <!-- 引进全球顶尖css库(私人订制) -->
+    <link rel="stylesheet" type="text/css" href="css/login_pwd.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="logo_box">
+                <a href="../../dist/index.html">
+                    <img src="images/logo_mini.png" alt="图片走远了">
+                </a>
+            </h1>
+        </div>
+    </header>
+    <div id="page" class="register_page">
+        <div class="register_bg">
+            <div class="register_theme">
+                <div class="register_box">
+                    <form  method="post">
+                        <div id="register_area" class="register-area">
+                            <ul class="register-tab clearfix">
+                                <li><a href="../login_msgcode/login_tel.html">短信登录</a></li>
+                                <li><a href="" class="active">密码登录</a></li>
+                            </ul>
+                            <div class="register-form">
+                                <ul>
+                                    <li id="uname-box">
+                                        <input id="uname" type="text" name="uname" value="">
+                                        <i for="uname">用户名</i>
+                                    </li>
+        
+                                    <li id="upwd-box">
+                                        <input id="upwd" type="text" name="upwd" value="">
+                                        <i for="upwd">密码</i>
+                                    </li>
+
+                                    <li id="idCode-box" class="clearfix">
+                                        <input type="text" id="Txtidcode" class="txtVerification" />
+                                        <span id="idcode"></span>
+                                    </li>
+
+
+
+
+
+                                    <li class="clearfix">
+                                        <div id="getpwd">
+                                            <a href="http://register.xiu.com/findPwd/" class="getpwd">找回密码</a>
+                                            |
+                                            <a href="./registerServer.html" class="getpass" style="cursor:help" title="短信登录即可注册">注册账号</a>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <!--初始状态-->
+                                        <button class="register-btn" id="register_Btn" type="submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                                    </li>
+                                </ul>
+                                <div class="register-extinfo">
+                                    <dl>
+                                        <dt id="register_opt" class="optbar"><span class="tit">合作网站账号登录</span></dt>
+                                        <dd id="api_register_box">
+                                            <ul class="api-register clfix">
+                                                <li><a href="http://union.xiu.com/tencent/redirectNew.action?url=http://www.xiu.com/ " class="api-qq" title="QQ账号"></a></li>
+                                                <li><a href="http://union.xiu.com/wechat/redirectNew.action?url=http://www.xiu.com/ " class="api-wechat" title="微信账号"></a></li>
+                                                <li><a href="http://union.xiu.com/sina/redirectNew.action?url=http://www.xiu.com/ " class="api-sina" title="新浪微博"></a></li>
+                                                <li><a href="http://union.xiu.com/alipay/redirectNew.action?type=register&amp;url=http://www.xiu.com/" class="api-alipay" title="支付宝账号"></a></li>
+                                                <li class="last"><a href="http://union.xiu.com/pingAn/redirectNew.action?url=http://www.xiu.com/" class="api-pingan" title="平安万里通"></a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="register-xieyi">
+                                    登录代表您已同意<a href="http://www.xiu.com/help/xieyi.shtml" target="_blank">《走秀网用户协议》</a>
+                                </div>
+                                <a href="https://register.xiu.com/register?registerDisplayType=3&amp;rd=http%3A%2F%2Fwww.xiu.com%2F" class="register_codego"></a>
+                                <a href="https://register.xiu.com/register?registerDisplayType=3&amp;rd=http%3A%2F%2Fwww.xiu.com%2F" class="register_ewmg"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="register_footer">
+            <div class="footer_xiu">
+                <a  target="_blank" href="http://www.xiu.com/about/aboutus.shtml">关于走秀</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/about/media.shtml">媒体报道</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/about/cooperate.shtml">品牌招商</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/about/job.shtml">加入走秀</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/about/link.shtml">友情链接</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/about/contact.shtml">联系我们</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/help/index.shtml">帮助中心</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/about/classifymap.shtml">网站地图</a>
+            </div>
+                <div class="footer-copyright">
+                    Copyright © 2008-<script>document.write(new Date().getFullYear());</script>2019 <a href="http://www.xiu.com">Xiu.com</a> 版权所有 . 粤ICP备07502993号
+                    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030402000804" target="_blank">
+                        <img src="http://www.xiustatic.com/static/img/footer/wab.png" width="14" height="14">
+                        粤公网安备 44030402000804号
+                    </a>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>

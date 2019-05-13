@@ -1,0 +1,254 @@
+#footer{
+margin:0 auto;
+width:100%;
+padding: 0 0 60px;
+border-top: #9a9a9a 3px solid;
+}
+#footer_bg{
+background: #F2F2F2;
+height:180px;
+}
+#footer .service_info{
+width:1200px;
+margin: 0 auto;
+height: 170px;
+padding-top: 20px;
+font-family:"微软雅黑", microsoft yahei, "宋体";
+}
+#footer .service_info div{
+float:left;
+}
+#footer .service_info .tel{
+height: 125px;
+margin: 10px 100px 0 0;
+width: 183px;
+}
+#footer .service_info .tel a:first-child{
+color: #252525;
+background: url(../images/footer/footer_sprite.gif) no-repeat left -86px;
+display: inline-block;
+width: 183px;
+height: 35px;
+}
+#footer .service_info .tel p{
+background: url(../images/footer/footer_sprite.gif) no-repeat left -122px;
+width: 183px;
+height: 45px;
+}
+#footer .service_info .tel a:last-child{
+background: url(../images/footer/footer_sprite.gif) no-repeat left -167px;
+display: inline-block;
+width: 183px;
+height: 35px;
+}
+
+/*第二块开始*/
+#footer .service_info dl{
+float:left;
+}
+#footer .service_info .CEO{
+padding: 8px 60px 0 0;
+width: 200px;
+}
+#footer .service_info .CEO dd a{
+font-size: 14px;
+line-height: 26px;
+}
+#footer .service_info .CEO dd a:hover{
+color:black;
+}
+#footer .service_info .fl_us{
+width: 254px;
+padding: 0;
+padding-top: 12px;
+}
+#footer .service_info .fl_us dt{
+height: 15px;
+border-bottom: 1px solid #808080;
+font-size: 18px;
+line-height: 30px;
+color: #111;
+font-weight: normal;
+text-align: center;
+margin-bottom: 15px;
+}
+
+#footer .service_info .fl_us dt span{
+display: inline-block;
+background: #f2f2f2;
+padding: 0 10px;
+}
+#footer .service_info .fl_us dd p{
+padding-top: 18px;
+width: 290px;
+}
+#footer .service_info .fl_us dd p a{
+float: left;
+text-indent: -10000px;
+width: 27px;
+height: 22px;
+margin: 0 36px 0 7px;
+overflow: hidden;
+background:url("../images/footer/footer_sprite.gif") no-repeat left -226px;
+}
+#footer .service_info .fl_us dd p a:hover{
+background:url("../images/footer/footer_sprite.gif") no-repeat left -263px;
+}
+#footer .service_info .fl_us dd p a:nth-child(2){
+background:url("../images/footer/footer_sprite.gif") no-repeat -70px -226px;
+}
+#footer .service_info .fl_us dd p a:nth-child(2):hover{
+background:url("../images/footer/footer_sprite.gif") no-repeat -70px -263px;
+}
+#footer .service_info .fl_us dd p a:nth-child(3){
+background:url("../images/footer/footer_sprite.gif") no-repeat -144px -226px;
+}
+#footer .service_info .fl_us dd p a:nth-child(3):hover{
+background:url("../images/footer/footer_sprite.gif") no-repeat -144px -263px;
+}
+#footer .service_info .fl_us dd p a:nth-child(4){
+background:url("../images/footer/footer_sprite.gif") no-repeat -214px -226px;
+}
+#footer .service_info .fl_us dd p a:nth-child(4):hover{
+background:url("../images/footer/footer_sprite.gif") no-repeat -214px -263px;
+}
+#footer .service_info .fl_us .emile{
+width: 100%;
+line-height: 20px;
+
+display: block;
+}
+#footer .service_info .fl_us .emile .emile_box{
+width: 253px;
+height: 30px;
+margin-top: 24px;
+position: relative;
+background:url("../images/footer/footer_sprite.gif") no-repeat left -436px;
+}
+#footer .service_info .fl_us .emile .emile_box .emile_in{
+width: 213px;
+float: left;
+height: 30px;
+font: 14px/30px 'Microsoft YaHei';
+color: #333;
+padding-left: 10px;
+background: none;
+border: none
+}
+#footer .service_info .fl_us .emile .emile_box .emile_go{
+float: right;
+width: 30px;
+height: 30px;
+background: none;
+cursor: pointer;
+border: none;
+}
+
+/****************第三块开始,微信那一块******************/
+#footer .service_info .wchat{
+float: right;
+width: 95px;
+}
+#footer .service_info .wchat>dt{
+font-size: 16px;
+line-height: 30px;
+color: #111;
+font-weight: normal;
+letter-spacing: 1px;
+margin: 2px 0 5px;
+}
+
+#footer .service_info .wchat>dd{
+background: url(../images/footer/footer_sprite.gif) no-repeat -189px -87px;
+width: 85px;
+height: 85px;
+margin-left: 0;
+cursor: pointer;
+}
+
+
+/**********底部的第二块*********/
+
+#footer .foot_link .f_link{
+
+}
+#footer .foot_link .f_link>ul{
+height: 32px;
+line-height: 32px;
+min-width: 1000px;
+text-align: center;
+}
+#footer .foot_link .f_link>ul>li{
+display: inline;
+color: #ccc;
+}
+#footer .foot_link .f_link>ul>li>a{
+margin: 0 8px 0 6px;
+color: #000;
+line-height:32px;
+}
+#footer .foot_link .f_link>ul>li>a:hover{
+color:#feb300;
+}
+/*底部第三块,海外直发*/
+#footer .foot_btn{
+width: 630px;
+height: 50px;
+padding: 10px 0;
+margin: 0 auto;
+}
+#footer .foot_btn a{
+background: url(../images/footer/foot_icons.jpg) no-repeat;
+width: 145px;
+height: 44px;
+margin-left: 47px;
+display: inline-block;
+float: left;
+}
+#footer .foot_btn .fa2{
+background-position:-192px 0;;
+}
+#footer .foot_btn .fa3{
+background-position:-384px 0;;
+}
+
+/**********版权那一块******************/
+#footer .copyright{
+width:100%;
+text-align:center;
+padding: 10px 0;
+margin: 0 auto;
+height: 20px;
+line-height: 20px;
+color: #999;
+font-family: Tahoma, Geneva, sans-serif, '宋体';
+clear: both;
+min-width: 1000px;
+}
+#footer .copyright>a{
+font-weight:bold;
+}
+#footer .copyright>a:hover{
+color:#feb300;
+}
+/*最后一块,做完就OK*/
+#footer .foot_ok{
+height: 100%;
+overflow: hidden;
+padding: 10px 0;
+width: 1000px;
+margin: 0 auto;
+text-align: center;
+}
+#footer .foot_ok>a>img{
+margin: 0px 0px 0px 12px;
+display: inline-block;
+}
+
+
+
+
+
+
+
+

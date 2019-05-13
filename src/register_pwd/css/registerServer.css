@@ -1,0 +1,210 @@
+*{margin:0; padding:0;}
+body{font:12px/1.125 Arial, Helvetica, sans-serif;background:#fff;}
+a{color:#0a8cd2;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+.clearfix{display:block;}
+.clear{clear:both;height:0;font:0/0 Arial;visibility:hidden;}
+.none{display:none}
+li{list-style:none}
+i{font-style:normal}
+
+
+body,html{
+width:100%;
+height:100%;
+font:12px/1.5 tahoma,helvetica,\5b8b\4f53,'bitstream vera sans',arial,sans-serif;
+}
+/*header部分*/
+header .header{
+width:1200px;
+height:60px;
+margin:0 auto;
+}
+header .header .logo_box{
+float: left;
+width: 194px;
+height: 30px;
+position: relative;
+margin: 15px auto;
+}
+
+/****************登录页面部分********/
+.register_page{
+border-top: 1px solid #e5e5e5;
+padding: 0;
+text-shadow: #fff 0 1px 0;
+}
+
+/*页面背景设置*/
+
+.register_page .register_bg{
+width: 100%;
+height: 100%;
+padding: 0;
+background-color:#f7f2ec;
+box-sizing:border-box;
+}
+
+/*页面主题设置*/
+
+.register_page .register_bg .register_theme{
+width:100%;
+margin:0 auto;
+height: 700px;
+position:relative;
+background:url("../images/register_bg_sever.jpg") no-repeat center;
+background-size:100%;
+}
+
+/*表单盒子制作*/
+
+.register_page .register_bg .register_theme .register_box{
+width: 420px;
+/*height: 500px;*/
+position: absolute;
+top: 2%;
+left:50%;
+transform:translateX(-50%);
+z-index: 10;
+border: 1px solid #d8d8d8;
+box-shadow: 0 0 20px #c8c8c8;
+background:rgba(255,255,255,.9);
+}
+
+/*以下是表单内容部分*/
+
+.register_box .register-area{
+background:inherit;
+}
+.register_box .register-area .register-tab{
+
+}
+.register_box .register-area .register-tab>li{
+background: #f7f7f9;
+display:block;
+width:100%;
+text-decoration: none;
+font-weight: 700;
+border-color: #464646;
+font-size: 16px;
+text-align: center;
+border-bottom: 2px solid #464646;
+}
+.register_box .register-area .register-tab>li>a{
+display:inline-block;
+height: 50px;
+line-height: 50px;
+color: #000;
+}
+.register_box .register-area .register-tab>li>a:hover{
+color: #464646;
+text-decoration: none;
+font-weight: 700;
+border-color: #464646;
+}
+
+
+
+.register-form>ul{
+display: block;
+margin:35px 60px 0;
+padding:0;
+}
+.register-form li{
+margin-top: 10px;
+position: relative;
+zoom: 1;
+}
+.register-form ul #usex_box{
+padding-left:11px;
+color: #464646;
+}
+
+.register-form li input{
+width: 280px;
+height: 24px;
+line-height: 24px;
+border: 1px solid #d8d8d8;
+color: #afafaf;
+padding: 5px 10px;
+font-size: 12px;
+position: relative;
+}
+.register-form li>#Txtidcode{
+width:150px;
+margin-right:30px;
+}
+.register-form li>.usex{
+margin-left:20px;
+width:15px;
+height:15px;
+}
+
+.register-form ul li>i{
+color: #afafaf;
+padding: 0 3px;
+height: 20px;
+line-height: 20px;
+background: #fff;
+font-size: 12px;
+position: absolute;
+left: 8px;
+top: 9px;
+cursor: text;
+}
+.register-form li .hover{
+top: -10px;
+}
+#usex_box{
+padding:10px 10px 0;
+}
+#usex_box>span{
+margin-right:50px;
+font-size:12px;
+}
+.register-form>ul>li> #register_Btn{
+margin-top:20px;
+float:left;
+width:300px;
+height:40px;
+line-height:40px;
+border:0;
+background:url(../images/register_sprite.png) 0 -40px no-repeat;
+color:#fff;
+font-size:14px;
+cursor:pointer;
+}
+.register-form .register-xieyi{
+color: #afafaf;
+text-align: center;
+margin: 20px 0;
+}
+/***************以下就是腿部******************/
+footer {
+margin:0 auto;
+height: 90px;
+padding-top:10px;
+width: 1200px;
+}
+footer .register_footer{
+width:100%;
+margin: 0 auto;
+}
+footer .register_footer .footer_xiu{
+padding-top: 15px;
+text-align:center;
+}
+footer .register_footer .footer_xiu>a{
+color: #464646;
+}
+
+.footer-copyright {
+text-align: center;
+padding-top: 10px;
+color: #999;
+}
+.footer-copyright>a{
+color: #999;
+}

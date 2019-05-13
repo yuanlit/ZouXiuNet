@@ -1,0 +1,234 @@
+body{
+font: 12px tahoma, arial, sans-serif;
+}
+*{ margin:0; padding:0;}
+body{font:12px/1.125 Arial, Helvetica, sans-serif;background:#fff;}
+a{color:#0a8cd2;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a{
+text-decoration:inherit;
+cursor:pointer;
+color:inherit;
+}
+a:hover {
+text-decoration:none ;
+cursor: pointer;
+color: #bfbfbf;
+}
+.clear:after{
+content:"";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+li{
+list-style:none;
+ }
+#header{
+width:100%;
+background:#333;
+padding:10px 0 0;
+}
+.header{
+width:1200px;
+height:83px;
+margin:0 auto;
+position:relative;
+}
+.header .toplink{
+margin-top:-9px;
+width:400px;
+float:left;
+position:relative;
+}
+.header .toplink li{
+ float:left;
+ color: #d7d7d7;
+ display: inline;
+ line-height: 34px;
+ }
+.header .toplink li a{
+display:block;
+line-height: 34px;
+width:100%;
+}
+
+#cart_list .cart_xl{
+background:#ffffff;
+position:absolute;
+left:0;
+top:34px;
+width:60px;
+z-index:1000;
+}
+#cart_list .cart_xl>dd{
+background:red;
+}
+.header .toplink li a span{
+color:lightcoral;
+}
+.header .toplink li:nth-child(1) a{
+padding: 0 5px;
+}
+.header .toplink li:nth-child(2){
+background:url(../images/header_bg.png) no-repeat -215px -40px;
+padding: 0 4px 0 26px;
+border: 1px solid #333;
+border-bottom: none;
+position: relative;
+top: 0;
+}
+
+.header .toplink li:nth-child(3){
+padding: 0 15px 0 10px;
+border: 1px solid #333;
+border-bottom: none;
+background:url(../images/header_bg.png) no-repeat right -108px;
+}
+
+
+
+/*购物袋那一块*/
+#cart_list{
+
+}
+#cart_list .cart_list:hover{
+background:#ffffff;
+}
+#cart_xl{
+position:absolute;
+left:100px;
+top:30px;
+background:#ffffff;
+display:none;
+}
+#cart_xl>dd{
+width:240px;
+padding:24px 10px;
+border:1px #cccccc solid;
+}
+/*--------------------------------------------*/
+.hd_topBox #logo{
+float:left;
+position:absolute;
+left:50%;
+top:0;
+margin: 0 0 0 -106px;
+}
+.hd_topBox #logo a{
+background:url(../images/header_bg.png) no-repeat 0 0;
+width:212px;
+height:32px;
+display:block;
+}
+.hd_topBox .search {
+float:right;
+display: inline;
+height: 26px;
+line-height: 26px;
+margin: 0;
+padding: 0 34px 0 8px;
+border: 1px solid #787878;
+background: #333;
+font-size: 12px;
+width: 219px;
+}
+.search_box .input_text{
+width:219px;
+color: #787878;
+background:inherit;
+border:none;
+outline:none;
+}
+.search_box .input_btn {
+position: absolute;
+right: 2px;
+top: 0;
+outline:none;
+width: 28px;
+height: 26px;
+padding: 0px;
+margin: 0;
+cursor: pointer;
+border: 0;
+background: url(../images/header_bg.png) no-repeat 0 -42px;
+}
+
+/**************************头部下边盒子********************************/
+#header .header .hd_butBox{
+height:44px;
+width:1200px;
+position:relative;
+bottom:-11px;
+display:flex;
+justify-content:center;
+}
+#header .header .hd_butBox .nav1{
+display:flex;
+justify-content:center;
+}
+#header .header .hd_butBox .nav1 li a{
+ display: inline-block;
+ padding: 12px 15px 10px;
+ margin: 0 6px;
+ height: 20px;
+ line-height: 20px;
+ font-size: 15px;
+ color: #eee;
+ border-bottom: 2px solid #333;
+ z-index: 2;
+ }
+#header .header .hd_butBox .nav1 li a:hover{
+color: #bfbfbf;
+border-bottom: 2px solid #727071;
+}
+#header .header .hd_butBox .nav1 li .active{
+border-bottom: 2px solid #727071;
+}
+
+/**********************下面的导航********************/
+#header .nav_box{
+/*position: relative;*/
+z-index: 10;
+text-align: center;
+width: 100%;
+height: 42px;
+background: #f7f7f7;
+border-bottom: 1px solid #fff;
+}
+
+#header .nav_box .nav2{
+display:flex;
+position:relative;
+margin:0 auto;
+width:1200px;
+justify-content:center;
+}
+#header .nav_box .nav2 li a{
+display: inline-block;
+*display: inline;
+padding: 12px 15px 10px;
+margin: 0 6px;
+height: 20px;
+line-height: 20px;
+font-size: 15px;
+color: #000;
+border-bottom: 2px solid #fff;
+z-index: 2;
+}
+
+/***********贼恶心的右边导航*****************/
+#header .nav_box .nav_right{
+z-index: 10000;
+position: fixed;
+top: 200px;
+left: 50%;
+margin-left: 650px;
+width: 120px;
+height: 600px;
+}
+#header .nav_box .nav_right area{
+outline: none;
+border: 0 none;
+}

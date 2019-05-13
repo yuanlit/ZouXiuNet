@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录-走秀网</title>
+    <script src="js/lib/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="logo_box">
+                <a href="../../dist/index.html">
+                    <img src="images/logo_mini.png" alt="图片走远了">
+                </a>
+            </h1>
+        </div>
+    </header>
+    <div id="page" class="login_page">
+        <div class="login_bg">
+            <div class="login_theme">
+                <div class="login_box">
+                    <form  method="post" action="#">
+                        <div id="login_area" class="login-area">
+                            <ul class="login-tab clearfix">
+                                <li><a href="" class="active">短信登录</a></li>
+                                <li><a href="../register_pwd/login_pwd.html">密码登录</a></li>
+                            </ul>
+                            <div class="login-form">
+                                <ul>
+                                    <li id="errorMsgBox" class="err-msg">
+                                        <label class="login-err-msg"><b></b><span id="errorMsgTxt">请输入有效的手机号!</span></label>
+                                    </li>
+                                    <li id="userTel-box">
+                                        <input id="userTel" class="user-tel" type="text" name="userTel" maxlength="11" value="">
+                                        <label id="userTel_wel" for="userTel" class="input-tip">手机号码</label>
+                                    </li>
+                                    <li id="msgCode_errorMsgBox" class="err-msg">
+                                        <label class="login-err-msg"><b></b><span id="msgCode_errorMsgTxt">请输入您收到的验证码</span></label>
+                                    </li>
+                                    <li id="msgCode-box" class="clearfix">
+                                        <input id="msgCode" class="msg-code" type="text" name="msgCode" maxlength="11" value="">
+                                        <label id="msgCode_wel" for="msgCode" class="input-tip">验证码</label>
+                                        <a id="msgCode_btn" href="javascript:void(0);" onclick="getMsgCode();">获取验证码</a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div id="getpwd"><a href="http://login.xiu.com/findPwd/" class="getpwd">找回密码</a></div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <!--初始状态-->
+                                        <button class="login-btn" id="login_Btn" type="submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                                    </li>
+                                </ul>
+                                <div class="login-extinfo">
+                                    <dl>
+                                        <dt id="login_opt" class="optbar"><span class="tit">合作网站账号登录</span></dt>
+                                        <dd id="api_login_box">
+                                            <ul class="api-login clfix">
+                                                <li><a href="http://union.xiu.com/tencent/redirectNew.action?url=http://www.xiu.com/ " class="api-qq" title="QQ账号"></a></li>
+                                                <li><a href="http://union.xiu.com/wechat/redirectNew.action?url=http://www.xiu.com/ " class="api-wechat" title="微信账号"></a></li>
+                                                <li><a href="http://union.xiu.com/sina/redirectNew.action?url=http://www.xiu.com/ " class="api-sina" title="新浪微博"></a></li>
+                                                <li><a href="http://union.xiu.com/alipay/redirectNew.action?type=login&amp;url=http://www.xiu.com/" class="api-alipay" title="支付宝账号"></a></li>
+                                                <li class="last"><a href="http://union.xiu.com/pingAn/redirectNew.action?url=http://www.xiu.com/" class="api-pingan" title="平安万里通"></a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="login-xieyi">
+                                    登录代表您已同意<a href="http://www.xiu.com/help/xieyi.shtml" target="_blank">《走秀网用户协议》</a>
+                                </div>
+                                <a href="https://login.xiu.com/login?loginDisplayType=3&amp;rd=http%3A%2F%2Fwww.xiu.com%2F" class="login_codego"></a>
+                                <a href="https://login.xiu.com/login?loginDisplayType=3&amp;rd=http%3A%2F%2Fwww.xiu.com%2F" class="login_ewmg"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="login_footer">
+            <div class="footer_xiu">
+                <a  target="_blank" href="http://www.xiu.com/about/aboutus.shtml">关于走秀</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/about/media.shtml">媒体报道</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/about/cooperate.shtml">品牌招商</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/about/job.shtml">加入走秀</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/about/link.shtml">友情链接</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/about/contact.shtml">联系我们</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/help/index.shtml">帮助中心</a>
+                <b>|</b>
+                <a  target="_blank" href="http://www.xiu.com/about/classifymap.shtml">网站地图</a>
+            </div>
+                <div class="footer-copyright">
+                    Copyright © 2008-<script>document.write(new Date().getFullYear());</script>2019 <a href="http://www.xiu.com">Xiu.com</a> 版权所有 . 粤ICP备07502993号
+                    <a href="http://www.beian.gov.cn/portal/loginSystemInfo?recordcode=44030402000804" target="_blank">
+                        <img src="http://www.xiustatic.com/static/img/footer/wab.png" width="14" height="14">
+                        粤公网安备 44030402000804号
+                    </a>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,313 @@
+*{margin:0; padding:0;}
+body{font:12px/1.125 Arial, Helvetica, sans-serif;background:#fff;}
+a{color:#0a8cd2;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+.clearfix{display:block;}
+.clear{clear:both;height:0;font:0/0 Arial;visibility:hidden;}
+.none{display:none}
+li{list-style:none}
+i{font-style: normal}
+
+body{
+font:12px/1.5 tahoma,helvetica,\5b8b\4f53,'bitstream vera sans',arial,sans-serif;
+}
+/*header部分*/
+header .header{
+width:1200px;
+height:60px;
+margin:0 auto;
+}
+header .header .logo_box{
+float: left;
+width: 194px;
+height: 30px;
+position: relative;
+margin: 15px auto;
+}
+
+/****************登录页面部分********/
+.register_page{
+border-top: 1px solid #e5e5e5;
+padding: 0;
+text-shadow: #fff 0 1px 0;
+}
+
+/*页面背景设置*/
+
+.register_page .register_bg{
+width: 100%;
+height: 700px;
+padding: 70px 0;
+background-color:#f7f2ec;
+box-sizing:border-box;
+}
+
+/*页面主题设置*/
+
+.register_page .register_bg .register_theme{
+width:1200px;
+margin:0 auto;
+height: 560px;
+position:relative;
+background:url("../images/register_bg.jpg") no-repeat center;
+}
+
+/*表单盒子制作*/
+
+.register_page .register_bg .register_theme .register_box{
+width: 420px;
+height: 560px;
+position: absolute;
+top: 0;
+right: 30px;
+z-index: 10;
+border: 1px solid #d8d8d8;
+box-shadow: 0 0 20px #c8c8c8;
+background:#ffffff;
+}
+
+/*以下是表单内容部分*/
+
+.register_page .register_bg .register_theme .register_box .register-area{
+background: #fff;
+}
+.register_page .register_bg .register_theme .register_box .register-area .register-tab{
+
+}
+.register_page .register_bg .register_theme .register_box .register-area .register-tab>li{
+float:left;
+background: #f7f7f9;
+}
+.register_page .register_bg .register_theme .register_box .register-area .register-tab>li>a{
+display:inline-block;
+height: 50px;
+line-height: 50px;
+font-size: 16px;
+width: 210px;
+text-align: center;
+border-bottom: 2px solid #f7f7f9;
+color: #afafaf;
+}
+.register_page .register_bg .register_theme .register_box .register-area .register-tab>li .active{
+color: #464646;
+text-decoration: none;
+font-weight: 700;
+border-color: #464646;
+}
+.register_page .register_bg .register_theme .register_box .register-area .register-tab>li>a:hover{
+color: #464646;
+text-decoration: none;
+font-weight: 700;
+border-color: #464646;
+}
+
+.register-form>ul{
+display: block;
+margin:35px 60px 0;
+padding:0;
+}
+.register-form>ul>li:nth-child(5){
+margin-top: 20px;
+position: relative;
+zoom: 1;
+}
+
+#uname-box,#upwd-box{
+    height: 30px;
+    margin-top: 40px;
+     margin-bottom: 20px;
+}
+.register-form li{
+margin-top: 10px;
+position: relative;
+zoom: 1;
+}
+.register-form li input{
+width: 280px;
+height: 24px;
+line-height: 24px;
+border: 1px solid #d8d8d8;
+color: #afafaf;
+padding: 5px 10px;
+font-size: 12px;
+position: relative;
+}
+.register-form ul li>i{
+color: #afafaf;
+padding: 0 3px;
+height: 20px;
+line-height: 20px;
+background: #fff;
+font-size: 12px;
+position: absolute;
+left: 8px;
+top: 9px;
+cursor: text;
+}
+.register-form ul li>i.hover{
+    top:-10px;
+}
+.register-form>ul>li>#getpwd{
+float:right;
+}
+.register-form>ul>li>#getpwd>a{
+color: #000000;
+}
+.register-form>ul>li>#Txtidcode{
+    height: 25px;
+    width: 120px;
+    border-color:#f7f2ec;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+.register-form>ul>li> #register_Btn{
+margin-top: 20px;
+float: left;
+width: 300px;
+height: 40px;
+line-height: 40px;
+border: 0;
+background: url(../images/register_sprite.png) 0 -40px no-repeat;
+color: #fff;
+font-size: 14px;
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*合作方信息那一块*/
+.register-extinfo {
+width: 300px;
+margin: 0 auto;
+padding: 30px 0 0;
+}
+.register-extinfo .optbar{
+display: block;
+height: 20px;
+line-height: 20px;
+margin: -15px 0 25px;
+zoom: 1;
+position: relative;
+border-bottom: 1px solid #e7e7e7;
+}
+.register-extinfo .optbar .tit {
+position: absolute;
+left: 50%;
+top: 50%;
+margin: 0 0 0 -60px;
+background: #fff;
+width: 120px;
+height: 20px;
+line-height: 20px;
+text-align: center;
+}
+.register-extinfo #api_register_box .api-register{
+width: 270px;
+height: 30px;
+margin: 0 auto;
+zoom: 1;
+}
+
+.register-extinfo #api_register_box .api-register>li{
+float: left;
+width: 30px;
+height: 30px;
+margin: 0 30px 0 0;
+overflow: hidden;
+zoom: 1;
+}
+.register-extinfo #api_register_box .api-register>.last{
+margin-right:0;
+}
+.register-extinfo #api_register_box .api-register>li>a{
+opacity: .8;
+display: block;
+width: 30px;
+height: 30px;
+background: url(../images/register_sprite.png) no-repeat;
+transition: all .3s;
+-webkit-transition: all .3s;
+}
+.register-extinfo #api_register_box .api-register>li>a.api-wechat{
+background-position: -30px 0;
+}
+.register-extinfo #api_register_box .api-register>li>a.api-sina{
+background-position: -60px 0;
+}
+.register-extinfo #api_register_box .api-register>li>a.api-alipay{
+background-position: -90px 0;
+}
+.register-extinfo #api_register_box .api-register>li>a.api-pingan{
+background-position: -120px 0;
+}
+.register-form .register-xieyi{
+color: #afafaf;
+text-align: center;
+margin: 20px 0;
+}
+.register-form .register_codego{
+width: 60px;
+height: 60px;
+position: absolute;
+right: 0;
+bottom: 0;
+background: url(../images/register_sprite.png) 0 -400px no-repeat;
+z-index: 100;
+}
+.register-form .register_ewmg{
+width: 85px;
+height: 25px;
+position: absolute;
+right: 55px;
+bottom: 12px;
+z-index: 100;
+background: url(../images/register_sprite.png) 0 -360px no-repeat
+}
+/***************以下就是腿部******************/
+footer {
+margin:0 auto;
+height: 90px;
+padding-top:10px;
+width: 1200px;
+}
+footer .register_footer{
+width:100%;
+margin: 0 auto;
+}
+footer .register_footer .footer_xiu{
+padding-top: 15px;
+text-align:center;
+}
+footer .register_footer .footer_xiu>a{
+color: #464646;
+}
+
+.footer-copyright {
+text-align: center;
+padding-top: 10px;
+color: #999;
+}
+.footer-copyright>a{
+color: #999;
+}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册-走秀网</title>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/registerServer.js"></script>
+    <script src="js/lib/jquery-validation/jquery.validate.js"></script>
+    <script src="js/lib/jquery.idcode.js"></script>
+    <script src="./js/lib/layer-v3.1.1/layer.js"></script>
+    <script src="js/lib/jquery-validation/localization/messages_zh.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/registerServer.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.idcode.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <h1 class="logo_box">
+            <a href="../../dist/index.html">
+                <img src="images/logo_mini.png" alt="图片走远了">
+            </a>
+        </h1>
+    </div>
+</header>
+<div id="page" class="register_page">
+    <div class="register_bg">
+        <div class="register_theme">
+            <div class="register_box">
+                <form  method="post" action="#">
+                    <div id="register_area" class="register-area">
+                        <ul class="register-tab clearfix">
+                            <li><a href="" class="active">欢迎注册,走秀网 !</a></li>
+                        </ul>
+                        <div class="register-form">
+                            <ul>
+                                <li id="uname_box">
+                                    <input id="uname" type="text" name="uname" value="">
+                                    <i id="uname_wel" for="uname">用户名</i>
+                                </li>
+                                <!--------------------------------------------------------------------------------------->
+                                <li id="upwd_box">
+                                    <input id="upwd" type="text" name="upwd" value="">
+                                    <i id="upwd_wel" for="upwd">密码</i>
+                                </li>
+                                <li id="upwd_box1">
+                                    <input id="upwd1" type="text" name="upwd1" value="">
+                                    <i id="upwd_wel1" for="upwd1">确认密码</i>
+                                </li>
+
+                                <!--------------------------------------------------------------------------------------->
+                                <p id="usex_box">
+                                    <span>性别</span>
+                                    <input id="man" class="usex" type="radio" name="usex" value="男">
+                                    <label for="man">男</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input id="woman" class="usex" type="radio" name="usex" value="女">
+                                    <label for="woman">女</label>
+                                </p>
+
+                                <!--------------------------------------------------------------------------------------->
+                                <li id="uemail-box">
+                                    <input id="uemail" type="text" name="uemail" value="">
+                                    <i id="uemail_wel" for="upwd">邮箱</i>
+                                </li>
+                                <!--------------------------------------------------------------------------------------->
+                                <li id="utel_box">
+                                    <input id="utel" type="text" name="utel" value="">
+                                    <i id="utel_wel" for="uname">电话</i>
+                                </li>
+                                <li id="ucode_box">
+                                    <input type="text" id="Txtidcode" class="txtVerification">
+                                    <span id="idcode"></span>
+                                    <i id="ucode_wel">验证码</i>
+                                </li>
+                                <!-------------------------------------------------->
+                                <li class="clearfix">
+                                    <!--初始状态-->
+                                    <button class="register-btn" id="register_Btn" type="submit">注&nbsp;&nbsp;&nbsp;&nbsp;册</button>
+                                </li>
+                            </ul>
+                            <div class="register-xieyi">
+                                注册代表您已同意<a href="http://www.xiu.com/help/xieyi.shtml" target="_blank">《走秀网用户协议》</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="register_footer">
+        <div class="footer_xiu">
+            <a  target="_blank" href="http://www.xiu.com/about/aboutus.shtml">关于走秀</a>
+            <b>|</b>
+            <a  target="_blank" href="http://www.xiu.com/about/media.shtml">媒体报道</a>
+            <b>|</b>
+            <a  target="_blank" href="http://www.xiu.com/about/cooperate.shtml">品牌招商</a>
+            <b>|</b>
+            <a  target="_blank" href="http://www.xiu.com/about/job.shtml">加入走秀</a>
+            <b>|</b>
+            <a  target="_blank" href="http://www.xiu.com/about/link.shtml">友情链接</a>
+            <b>|</b>
+            <a  target="_blank" href="http://www.xiu.com/about/contact.shtml">联系我们</a>
+            <b>|</b>
+            <a  target="_blank" href="http://www.xiu.com/help/index.shtml">帮助中心</a>
+            <b>|</b>
+            <a  target="_blank" href="http://www.xiu.com/about/classifymap.shtml">网站地图</a>
+        </div>
+        <div class="footer-copyright">
+            Copyright © 2008-<script>document.write(new Date().getFullYear());</script>2019 <a href="http://www.xiu.com">Xiu.com</a> 版权所有 . 粤ICP备07502993号
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030402000804" target="_blank">
+                <img src="http://www.xiustatic.com/static/img/footer/wab.png" width="14" height="14">
+                粤公网安备 44030402000804号
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

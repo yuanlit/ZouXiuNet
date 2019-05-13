@@ -1,0 +1,16 @@
+#main #goods_box .goods-box ul{
+overflow: hidden;
+margin: 0 0 40px;
+width: 1200px;
+}
+#main #goods_box .goods-box ul> li>a>img{
+ display:block;
+ }
+#main #goods_box .goods-box ul> li{
+float:left;
+width: 397px;
+margin: 0 4px 4px 0;
+}
+#main #goods_box .goods-box ul> li:nth-child(3n){
+margin:0;
+}
