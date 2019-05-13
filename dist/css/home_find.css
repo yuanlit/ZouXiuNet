@@ -26,7 +26,7 @@ width: 285px;
 height: 488px;
 z-index: 1000;
 }
-#itme>.sub{
+.itme>.sub{
     box-sizing: border-box;
     padding: 10px;
     position: absolute;
@@ -37,21 +37,21 @@ z-index: 1000;
     width: 100%;
     overflow: hidden;
 }
-#itme>.sub>img{
+.itme>.sub>img{
     z-index: -1;
     display: block;
 }
-#itme>.sub>p{
+.itme>.sub>p{
     margin: 4px;
 }
-#itme>.sub>p>a{
+.itme>.sub>p>a{
     display: block;
     margin:  0 100px;
     border: 1px solid #ccc;
     width: 80px;
     text-align: center;
 }
-#itme>.sub>p>a:hover{
+.itme>.sub>p>a:hover{
     color: red;
     background: greenyellow;
 }

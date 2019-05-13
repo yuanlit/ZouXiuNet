@@ -16,11 +16,11 @@
                     disX = 0;
                 }else if( disX >= $("#imgPicDiv").width()-$("#showimg").width()){
                     disX == $("#imgPicDiv").width()-$("#showimg").width();
-                    console.log(111);
+                    // console.log(111);
                 }
                 $("#showimg").css("left",disX);
                 $("#showimg").css("top",disY);
-                console.log(disX,disY);
+                // console.log(disX,disY);
             })
         });
 

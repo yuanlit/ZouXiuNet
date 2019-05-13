@@ -9,6 +9,7 @@
 
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/detail-page.js"></script>
+    <script src="js/home_info.js"></script>
 </head>
 <body>
 <div id="header">
@@ -99,47 +100,32 @@
 
                 <div class="big_map">
                     <div id="imgPicDiv">
-                        <!--上方中图显示区域-->
-                        <img src="./images/1.jpg" id="imgPic">
+                        <!--上方中等大小的图-->
+                        <img src="" id="imgPic" style="width:100%;height:100%;">
                         <div id="showimg" class="XMagicPup" >
 
                         </div>
-                        <img src="./images/2.jpg" id="imgPicMask">
-
+                        <img src="" id="imgPicMask">
+                        <!-- 这个就是最大的图 -->
                         <div id="bigPicDiv" class="XMagicBigImageCont">
-                            <img id="bigPic" src="./images/lg1.jpg"/>
+                            <img id="bigPic" src="./images/3-lg1.jpg"/>
                         </div>
                     </div>
                 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div class="sm_map">
                     <dl id="smallPic">
+                        <!-- 放大镜下方第一个小图 -->
                         <dd class="">
                             <a href="javascript:;">
-                                <img src="images/sm1.jpg"  alt="韩版拼接收腰撞色圆点图案修身半身裙">
+                                <img id="sm1" src=""  alt="韩版拼接收腰撞色圆点图案修身半身裙">
                             </a>
                         </dd>
+                        <!-- 放大镜下方第二个小图 -->
                         <dd class="dc">
                             <a href="javascript:;">
-                                <img src="./images/sm2.jpg" alt="韩版拼接收腰撞色圆点图案修身半身裙">
+                                <img id="sm2" src="" alt="韩版拼接收腰撞色圆点图案修身半身裙">
                             </a>
                         </dd>
                     </dl>
@@ -168,7 +154,7 @@
                 </span>
                     </div>
                     <img src="http://www.xiustatic.com/static/img/ajax-loader.gif" alt="载入中" id="productLoading" style="display: none;">
-                    <div id="prd_price_div"><div class="prd_price_div" class="xxjx"><div class="clearfix"></div><div class="col1 z1"><span class="spw">走 秀 价：</span><span class="style3">531</span></div><div class="clearfix"></div><div class="col1 cx_tips"><div class="spw">促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销：</div><div class="cx_detail"><p><em class="cx_icon">满减</em>满2万减5千，满1万减2千，满5千减750</p></div></div><p class="col1 myf layer13"><span class="spw">发 货 地：</span><b>国内</b><b class="stime">预计3-7个工作日送达</b></p></div></div> <div id="prd_attr_div" class="cm"> <div class="modleDiv"> <div class="cm_hz" id="colorsArea"><div class="xsxm">颜&nbsp;&nbsp;&nbsp;&nbsp;色：</div><div class="cmxs noLimit"><ul> <li><a href="#" rel="color" id="c-0" class="">红色</a></li> <li class="selected"><a href="#" rel="color" id="c-1" class="">草绿</a></li> </ul></div></div> <div class="cm_hz" id="sizesArea"><div class="xsxm">尺&nbsp;&nbsp;&nbsp;&nbsp;码：</div><div class="cmxs noLimit"><ul> <li class="selected"><a href="#" rel="size" id="s-1" class="">S</a></li> <li><a href="#" rel="size" id="s-0" class="noStock" title="没有库存">M</a></li> </ul> </div></div> <div class="cm_hz" id="J_amount"><div class="xsxm">数&nbsp;&nbsp;&nbsp;&nbsp;量：</div><div class="cmxs"><span class="down dis" id="minusAmount"></span><input type="text" id="inputQuantity" name="inputQuantity" value="1"><span class="up" id="plusAmount"></span>件<span id="J_stockCon" class="stock-con" style="display: none;">还剩<b id="J_stockNum" class="stock_num"></b>件啦，看看谁手快！</span></div></div> <div class="cmxs cmxsb" id="installmentAndGift"> <a href="javascript:;" class="fqfh">支持分期付款<em><img src="/static/css/default/img/fqbiao.jpg"><b>订单总金额大于<font color="#ea7514">500</font>元即可选择订单分期付款</b><br>支付时选择“信用卡分期"-"银联在线支付”，<br>即可分期付款。</em></a><span class="wlb"><a href="javascript:;" title="商品由ACE韩国馆提供" style="max-width: 260px;">由ACE韩国馆提供</a></span><span class="fwb">由走秀网提供售后服务</span></div> <div class="buy_it rela" id="buyBtnId"> <a href="#" class="user_buy0" id="user_buy_btn_l" title="立即购买"></a><a href="#" class="user_buy1" id="user_buy_btn" title="放入购物袋"></a> <a href="#" class="sc_t" id="addToFavoBtn"></a> </div> <div class="call_buy">电话订购：<strong>400-888-4499</strong>&nbsp;<span>（09:00-19:00）</span></div> </div></div></div>
+                    <!-- <div id="prd_price_div"><div class="prd_price_div" class="xxjx"><div class="clearfix"></div><div class="col1 z1"><span class="spw">走 秀 价：</span><span class="style3">531</span></div><div class="clearfix"></div><div class="col1 cx_tips"><div class="spw">促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销：</div><div class="cx_detail"><p><em class="cx_icon">满减</em>满2万减5千，满1万减2千，满5千减750</p></div></div><p class="col1 myf layer13"><span class="spw">发 货 地：</span><b>国内</b><b class="stime">预计3-7个工作日送达</b></p></div></div> <div id="prd_attr_div" class="cm"> <div class="modleDiv"> <div class="cm_hz" id="colorsArea"><div class="xsxm">颜&nbsp;&nbsp;&nbsp;&nbsp;色：</div><div class="cmxs noLimit"><ul> <li><a href="#" rel="color" id="c-0" class="">红色</a></li> <li class="selected"><a href="#" rel="color" id="c-1" class="">草绿</a></li> </ul></div></div> <div class="cm_hz" id="sizesArea"><div class="xsxm">尺&nbsp;&nbsp;&nbsp;&nbsp;码：</div><div class="cmxs noLimit"><ul> <li class="selected"><a href="#" rel="size" id="s-1" class="">S</a></li> <li><a href="#" rel="size" id="s-0" class="noStock" title="没有库存">M</a></li> </ul> </div></div> <div class="cm_hz" id="J_amount"><div class="xsxm">数&nbsp;&nbsp;&nbsp;&nbsp;量：</div><div class="cmxs"><span class="down dis" id="minusAmount"></span><input type="text" id="inputQuantity" name="inputQuantity" value="1"><span class="up" id="plusAmount"></span>件<span id="J_stockCon" class="stock-con" style="display: none;">还剩<b id="J_stockNum" class="stock_num"></b>件啦，看看谁手快！</span></div></div> <div class="cmxs cmxsb" id="installmentAndGift"> <a href="javascript:;" class="fqfh">支持分期付款<em><img src="/static/css/default/img/fqbiao.jpg"><b>订单总金额大于<font color="#ea7514">500</font>元即可选择订单分期付款</b><br>支付时选择“信用卡分期"-"银联在线支付”，<br>即可分期付款。</em></a><span class="wlb"><a href="javascript:;" title="商品由ACE韩国馆提供" style="max-width: 260px;">由ACE韩国馆提供</a></span><span class="fwb">由走秀网提供售后服务</span></div> <div class="buy_it rela" id="buyBtnId"> <a href="#" class="user_buy0" id="user_buy_btn_l" title="立即购买"></a><a href="#" class="user_buy1" id="user_buy_btn" title="放入购物袋"></a> <a href="#" class="sc_t" id="addToFavoBtn"></a> </div> <div class="call_buy">电话订购：<strong>400-888-4499</strong>&nbsp;<span>（09:00-19:00）</span></div> </div></div></div> -->
                 <div style="clear:both; height:0; font-size:0; overflow:hidden;"></div>
                 <div class="share_box">
                     <dl>
@@ -272,9 +258,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container">
+                    <!-- <div class="container">
                         <iframe id="shortComment" name="shortComment" src="http://comm.xiu.com/commentlist/innerindex/47726624/116986830003" height="1438" width="774" frameborder="0" scrolling="no"></iframe>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="container zp_container review_brief" id="container1" style="display:none">
                     <iframe align="center" height="100" width="100" id="win" name="win" frameborder="0" scrolling="no" src=""></iframe>
