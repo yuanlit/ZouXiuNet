@@ -5,12 +5,19 @@
       "pro_price": "699",
       "pro_info": " 男士美杜莎印花短袖T恤",
       "pro_imgs": [
-        "images/home_find/1.jpg"
+        "images/home_find/1.jpg",
+      
+        "images/1.jpg",
+        "images/1.jpg",
+        "images/1.jpg",
+        "images/1.jpg",
+        "images/1.jpg",
+        "images/1.jpg"
       ]
     },
     {
       "pro_id":"10002",
-      "pro_name": "VVC",
+      "pro_name": "原谅帽",
       "pro_price": "195",
       "pro_info": "vvc女神帽和vvc冰袖",
       "pro_imgs": [
@@ -27,7 +34,7 @@
     {
       "pro_id":"10003",
       "pro_name": "Loocoberry",
-      "pro_price": "531",
+      "pro_price": "666",
       "pro_info": "韩版拼接收腰撞色圆点图案修身半身裙",
       "pro_imgs": [
         "images/home_find/3.jpg",
@@ -45,7 +52,14 @@
         "pro_price": "2380",
         "pro_info": " 男士网面运动鞋",
         "pro_imgs": [
-          "images/home_find/4.jpg"
+          "images/home_find/4.jpg",
+
+        "images/4.jpg",
+        "images/4.jpg",
+        "images/4.jpg",
+        "images/4.jpg",
+        "images/4.jpg",
+        "images/4.jpg"
         ]
       },
       {
@@ -54,7 +68,14 @@
         "pro_price": "2880",
         "pro_info": " 男士织物运动鞋",
         "pro_imgs": [
-          "images/home_find/5.jpg"
+          "images/home_find/5.jpg",
+      
+        "images/5.jpg",
+        "images/5.jpg",
+        "images/5.jpg",
+        "images/5.jpg",
+        "images/5.jpg",
+        "images/5.jpg"
         ]
       },
       {
@@ -63,7 +84,14 @@
         "pro_price": "4324",
         "pro_info": "男士低帮运动鞋",
         "pro_imgs": [
-          "images/home_find/6.jpg"
+          "images/home_find/6.jpg",
+        
+          "images/6.jpg",
+          "images/6.jpg",
+          "images/6.jpg",
+          "images/6.jpg",
+          "images/6.jpg",
+          "images/6.jpg"
         ]
       },
       {
@@ -72,7 +100,14 @@
         "pro_price": "7987",
         "pro_info": " 蝴蝶珍珠项链金色",
         "pro_imgs": [
-          "images/home_find/7.jpg"
+          "images/home_find/7.jpg",
+         
+          "images/7.jpg",
+          "images/7.jpg",
+          "images/7.jpg",
+          "images/7.jpg",
+          "images/7.jpg",
+          "images/7.jpg"
         ]
       },
       {
@@ -81,7 +116,15 @@
         "pro_price": "324",
         "pro_info": " 日本食品级304不锈钢双层保护",
         "pro_imgs": [
-          "images/home_find/8.jpg"
+          "images/home_find/8.jpg",
+
+          "images/8.jpg",
+          "images/8.jpg",
+          "images/8.jpg",
+          "images/8.jpg",
+          "images/8.jpg",
+          "images/8.jpg"
+
         ]
       },
       {
@@ -90,7 +133,13 @@
         "pro_price": "65432",
         "pro_info": " 向日葵丝绸连衣裙",
         "pro_imgs": [
-          "images/home_find/9.jpg"
+          "images/home_find/9.jpg",
+          "images/9.jpg",
+          "images/9.jpg",
+          "images/9.jpg",
+          "images/9.jpg",
+          "images/9.jpg",
+          "images/9.jpg"
         ]
       },
       {
@@ -99,7 +148,13 @@
         "pro_price": "999999999",
         "pro_info": "不知道名字,反正很贵",
         "pro_imgs": [
-          "images/home_find/10.jpg"
+          "images/home_find/10.jpg",
+          "images/10.jpg",
+          "images/10.jpg",
+          "images/10.jpg",
+          "images/10.jpg",
+          "images/10.jpg",
+          "images/10.jpg"
         ]
       },
   {
@@ -108,7 +163,13 @@
     "pro_price": "888",
     "pro_info": "不知道名字,反正很贵",
     "pro_imgs": [
-      "images/home_find/11.jpg"
+      "images/home_find/11.jpg",
+      "images/11.jpg",
+      "images/11.jpg",
+      "images/11.jpg",
+      "images/11.jpg",
+      "images/11.jpg",
+      "images/11.jpg"
     ]
   },
   {
@@ -117,7 +178,13 @@
     "pro_price": "999999999",
     "pro_info": "不知道名字,反正很贵",
     "pro_imgs": [
-      "images/home_find/12.jpg"
+      "images/home_find/12.jpg",
+      "images/12.jpg",
+      "images/12.jpg",
+      "images/12.jpg",
+      "images/12.jpg",
+      "images/12.jpg",
+      "images/12.jpg"
     ]
   },
   {
@@ -126,7 +193,14 @@
     "pro_price": "999999999",
     "pro_info": "不知道名字,反正很贵",
     "pro_imgs": [
-      "images/home_find/13.jpg"
+      "images/home_find/13.jpg",
+
+      "images/13.jpg",
+      "images/13.jpg",
+      "images/13.jpg",
+      "images/13.jpg",
+      "images/13.jpg",
+      "images/13.jpg"
     ]
   },
   {
@@ -135,7 +209,13 @@
     "pro_price": "999999999",
     "pro_info": "不知道名字,反正很贵",
     "pro_imgs": [
-      "images/home_find/14.jpg"
+      "images/home_find/14.jpg",
+      "images/14.jpg",
+      "images/14.jpg",
+      "images/14.jpg",
+      "images/14.jpg",
+      "images/14.jpg",
+      "images/14.jpg"
     ]
   },
   {
@@ -144,7 +224,13 @@
     "pro_price": "999999999",
     "pro_info": "不知道名字,反正很贵",
     "pro_imgs": [
-      "images/home_find/15.jpg"
+      "images/home_find/15.jpg",
+      "images/15.jpg",
+      "images/15.jpg",
+      "images/15.jpg",
+      "images/15.jpg",
+      "images/15.jpg",
+      "images/15.jpg"
     ]
   },
   {
@@ -153,7 +239,13 @@
     "pro_price": "999999999",
     "pro_info": "不知道名字,反正很贵",
     "pro_imgs": [
-      "images/home_find/16.jpg"
+      "images/home_find/16.jpg",
+      "images/16.jpg",
+      "images/16.jpg",
+      "images/16.jpg",
+      "images/16.jpg",
+      "images/16.jpg",
+      "images/16.jpg"
     ]
   }
   ]

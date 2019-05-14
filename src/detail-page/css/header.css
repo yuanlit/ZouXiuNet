@@ -218,17 +218,13 @@ border-bottom: 2px solid #fff;
 z-index: 2;
 }
 
-/***********贼恶心的右边导航*****************/
-#header .nav_box .nav_right{
+/***********右边的购物车*****************/
+#r_list{
 z-index: 10000;
 position: fixed;
 top: 200px;
-left: 50%;
-margin-left: 650px;
-width: 120px;
-height: 600px;
-}
-#header .nav_box .nav_right area{
-outline: none;
-border: 0 none;
+right: 0px;
+width: 100px;
+min-height: 400px;
+background: red;
 }

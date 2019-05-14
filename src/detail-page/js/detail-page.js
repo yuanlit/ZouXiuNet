@@ -1,18 +1,22 @@
+
+
+
+//放大镜
 ;
 (function($){
     $(function(){
-
         $("#imgPicDiv").on("mouseenter","",function(){
             $("#showimg").css("display","block");
+            $("#bigPicDiv").css("display","block");
             $("#showimg").css("background","red");
             $("#showimg").css("position","absolute");
             $(document).on("mousemove",function(evt){
 
 
-
-                var oScale1 = $("#bigPic").height()/$("#imgPic").height();
+                // 准备小盒子移动的距离
+                var oScale1 = $("#bigPic").height()/$("#imgPic").height();  //计算比例
                 var oScale2 = $("#bigPic").width()/$("#imgPic").width();
-                var oScale=(oScale1+oScale2)/2;
+                // var oScale=(oScale1+oScale2)/2;
                 var disX = evt.pageX-$("#imgPicDiv").offset().left-$("#showimg").width()/2;
                 var disY = evt.pageY-$("#imgPicDiv").offset().top-$("#showimg").height()/2;
                 if(disX <= 0){
@@ -26,16 +30,20 @@
                 }else if(disY >= $("#imgPicDiv").height()-$("#showimg").height()){
                     disY = $("#imgPicDiv").height()-$("#showimg").height()
                 }
-
+                //让小盒子移动  
                 $("#showimg").css("left",disX);
                 $("#showimg").css("top",disY);
-                var mX= -409 -(disX-182)*oScale;
-                var mY= -498 -(disY-200)*oScale;
+                //让大盒子的图移动
+                var mX= -409 -(disX-182)*oScale2;
+                var mY= -458 -(disY-200)*oScale1;
                 $("#bigPic").css("left",mX);
                 $("#bigPic").css("top",mY);
-
-
-
+            });
+            $("#imgPicDiv").on("mouseleave",function(){
+                $(document).off("mousemove");
+                $("#imgPicDiv").off("mouseleave"); 
+                $("#showimg").css("display","none");
+                $("#bigPicDiv").css("display","none");
             })
         });
 

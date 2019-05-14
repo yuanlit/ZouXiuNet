@@ -20,7 +20,6 @@
 
 
         window.onload=function(){
-
             //登录页面跳转状态
             var uInfo=sessionStorage.getItem("userInfo");
             var ouInfo=JSON.parse(uInfo);
@@ -32,6 +31,8 @@
                             time: 4000,
                         });
                     });
+            }else{
+                $(this).attr("href","../src/register_pwd/login_pwd.html")
             }
 
             $.ajax({
