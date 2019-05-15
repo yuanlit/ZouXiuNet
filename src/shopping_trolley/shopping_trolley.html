@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>我的购物袋-走秀网-全球时尚旗舰店</title>
     <link rel="stylesheet" type="text/css" href="css/shopping_trolley.css">
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/shopping_trolley.js"></script>
+    <script src="js/lib/layer-v3.1.1//layer.js"></script>
 </head>
 <body>
     <div id="header">
@@ -19,7 +23,12 @@
                     <span>客服热线(免长途费)：<b>400-888-4499</b></span>
                 </p>
                 <p>
-                    <span id="loginZone">您好!欢迎光临走秀网! <a href="../register_pwd/login_pwd.html" target="_blank" id="loginBtn" title="登录/注册"> [ 登录/注册 ] </a></span>
+                    <span id="loginZone">
+                        您好!欢迎光临走秀网! 
+                        <a href="../register_pwd/login_pwd.html" target="_blank" id="loginBtn" title="登录/注册">
+                             [ 登录/注册 ] 
+                        </a>
+                    </span>
                     |
                     <a href="http://www.xiu.com/help/index.shtml" target="_blank" title="帮助"> 帮助中心 </a>
                 </p>
@@ -38,7 +47,15 @@
     <div id="main">
         <div class="shoppingCart" id="shopping-cart">
             <img src="images/nogoods.jpg"/>
-            <h2 class="war_h2" style="color:#000000">购物袋暂没有商品，现在就去  <a href="../../dist/index.html" style="color:#FF6633;border-bottom:1px solid " class="blue"><span onclick="javascript:XIU.Window.ctraceClick('type=viewheat','trade');">挑选自己喜欢的商品</span></a>  。</h2>
+            <h2 class="war_h2" style="color:#000000">
+                购物袋暂没有商品，现在就去  
+                <a href="#" style="color:#FF6633;border-bottom:1px solid " class="blue">
+                    <span onclick="javascript:XIU.Window.ctraceClick('type=viewheat','trade');">
+                        挑选自己喜欢的商品
+                    </span>
+                </a>
+                  。
+            </h2>
         </div>
         <div class="elements_list">
 
@@ -48,9 +65,9 @@
             <h2 style="float:left;">
                 <a class="on out" href="javascript:void(0);" id="showModle" onclick="showModle();" hidefocus="true" style="outline:none"><b></b></a>
             </h2>
-            <h2>
+            <!-- <h2>
                 请<a class="red" href="../register_pwd/login_pwd.html" style="color:#FF6633;" id="loginDiv";>登录</a>后查看您收藏的商品
-            </h2>
+            </h2> -->
         </div>
 
         </div>
@@ -65,5 +82,7 @@
         </p>
         <p></p><p> </p>
     </div>
+    <br />
+
 </body>
 </html>

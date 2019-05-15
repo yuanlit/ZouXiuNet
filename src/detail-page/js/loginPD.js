@@ -13,18 +13,22 @@
                             time: 4000,
                         });
                     });
+                $("#user_buy_btn_l").on("click",function(){
+                    layer.tips('亲,请先登录哦~', $("#user_buy_btn_l"), {
+                        tips: [1, '#3595CC'],
+                        time: 4000,
+                    });
+                });
             }else{
-                $(".cart_list").attr("href","../src/shopping_trolley/shopping_trolley.html");
+                $(".cart_list").attr("href","../shopping_trolley/shopping_trolley.html");
+                $("#user_buy_btn_l").attr("href","../shopping_trolley/shopping_trolley.html");
             }
 
             $.ajax({
-                url:"../server/checkeLogin.php",
+                url:"../../server/checkeLogin.php",
             }).then(function(res){
                 var oSession = res.data;  //直接拿到session返回的数据;
-                //var str = JSON.stringify(res.data);
-                // sessionStorage.setItem("userInfo",str);
-                // var data = sessionStorage.getItem("userInfo");
-                // var oData = JSON.parse(data);
+
                 if(res.status === 1&&ouInfo !=null){
                     $(".toplink>li:eq(0)>a").remove();
                     //console.log(ouInfo);

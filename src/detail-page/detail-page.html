@@ -10,6 +10,8 @@
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/detail-page.js"></script>
     <script src="js/home_info.js"></script>
+    <script src="js/lib/layer-v3.1.1//layer.js"></script>
+    <script src="js/loginPD.js"></script>
 </head>
 <body>
 <div id="header">
@@ -20,8 +22,8 @@
                 <li id="cart_list">
                     <a class="cart_list">
                         购物袋
-                        <span>
-                            0
+                        <span id="res_num">
+                            ~
                         </span>
                         件
                     </a>
@@ -64,10 +66,6 @@
             <li><a href="">生活</a></li>
             <li><a href="">婴童</a></li>
         </ul>
-        <div id="r_list">
-            12
-        </div>
-        
     </div>
 </div>
 
@@ -234,7 +232,7 @@
                                             <span class="down dis" id="minusAmount">
 
                                             </span>
-                                            <input type="text" id="inputQuantity" name="inputQuantity" value="1">
+                                            <input type="text" id="inputQuantity" name="inputQuantity" value="1";>
                                             <span class="up" id="plusAmount">
 
                                             <!-- </span>件<span id="J_stockCon" class="stock-con" style="display: none;">
@@ -260,10 +258,10 @@
                                         </span>
                                     </div> 
                                     <div class="buy_it rela" id="buyBtnId"> 
-                                        <a href="#" class="user_buy0" id="user_buy_btn_l" title="立即购买">
-
+                                        <a  class="user_buy0" style="background:#ccc;border-radius: 5px;font: 20px/1 '';line-height:34px;text-align: center;font-weight: 700;" id="user_buy_btn_l" title="立即购买">
+                                                算总账!
                                         </a>
-                                        <a href="#" class="user_buy1" id="user_buy_btn" title="放入购物袋">
+                                        <a href="javaScript:;" class="user_buy1"  id="user_buy_btn" title="放入购物袋">
 
                                         </a> <a href="#" class="sc_t" id="addToFavoBtn">
 
