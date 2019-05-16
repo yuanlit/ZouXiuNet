@@ -47,6 +47,8 @@ $(function(){
                        
                         goods_data.pro_num=Number(jixujiagou_num)+Number(SQLnum);
                         console.log("后台购物车累计"+goods_data.pro_num+"件");   //同一件商品,后台的数量
+                        console.log(goods_data);
+                        
                         $.ajax({
                             url:"../../server/cartsServer.php",
                             data:goods_data,

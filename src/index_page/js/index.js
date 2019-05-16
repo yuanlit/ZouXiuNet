@@ -21,10 +21,7 @@
                 url:"../../server/checkeLogin.php",
             }).then(function(res){
                 var oSession = res.data;  //直接拿到session返回的数据;
-                //var str = JSON.stringify(res.data);
-                // sessionStorage.setItem("userInfo",str);
-                // var data = sessionStorage.getItem("userInfo");
-                // var oData = JSON.parse(data);
+
                 if(res.status === 1&&ouInfo !=null){
                     $(".toplink>li:eq(0)>a").remove();
                     //console.log(ouInfo);
