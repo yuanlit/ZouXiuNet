@@ -11,8 +11,6 @@
             $("#showimg").css("background","red");
             $("#showimg").css("position","absolute");
             $(document).on("mousemove",function(evt){
-
-
                 // 准备小盒子移动的距离
                 var oScale1 = $("#bigPic").height()/$("#imgPic").height();  //计算比例
                 var oScale2 = $("#bigPic").width()/$("#imgPic").width();
@@ -63,15 +61,6 @@
             }
             $("#inputQuantity").attr("value",S_num);
         })
-
-
-
-
-
-
-
-
-
 
     })
 

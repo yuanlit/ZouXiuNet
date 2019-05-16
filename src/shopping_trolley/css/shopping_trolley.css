@@ -214,6 +214,13 @@ background-origin: border-box;
 .layui-layer-lan{
     background: #F26521;
 }
+#num_c{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin: 5px;
+}
 
 
 

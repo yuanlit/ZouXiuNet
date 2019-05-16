@@ -6,8 +6,6 @@ $(function(){
         var str = str.split("=")[1];
         return str;
     }
-//判断用户购买的商品,不能为负数;
-
     var jixujiagou_num=$("#inputQuantity").val();
     var flag=true;
         //点击购买,加入购物车;并将数据存入后台;

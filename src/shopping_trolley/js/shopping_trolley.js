@@ -43,7 +43,15 @@
                         res.forEach(element=> {
                             let str_info=JSON.stringify(element)
                             result_num += element.c_pro_num-0;
-                            let str= "<tr data-info="+str_info+"><td><img src="+element.c_pro_img+" alt=''></td><td>"+element.c_pro_name+"</td><td>"+element.c_pro_price+"</td><td><button id='num_jian' class='c_num'>"+'－'+"</button>"+element.c_pro_num+"<button id='num_jia' class='c_num'>"+'＋'+"</button></td><td>"+element.c_pro_total+"</td><td><button onclick=del("+element.c_id+",this) id='del_S'>移除</button></td></tr>";
+                            let str= "<tr data-info="+str_info+
+                            "><td><img src="+element.c_pro_img+
+                            " alt=''></td><td>"+element.c_pro_name+
+                            "</td><td>"+element.c_pro_price+
+                            "</td><td><button id='num_jian' class='c_num'>"+'－'+
+                            "</button><input id='num_c' value="+element.c_pro_num+
+                            " disabled='true'><button id='num_jia' class='c_num'>"+'＋'+
+                            "</button></td><td>"+element.c_pro_total+"</td><td><button onclick=del("+element.c_id+
+                            ",this) id='del_S'>移除</button></td></tr>";
                             $("#tab_list").append(str);
                         });
                         console.log(result_num);  //所有商品的总数
@@ -53,41 +61,40 @@
             })
     }
 
-
-
-
-
-
-
-
-
-
-
     //控制商品的数量
-
+    
     $("#tab_list").on("click",".c_num",function(){
-        console.log(this.id);
-        if(this.id == "num_jia"){
-            S_num++;
+        var data = $(this).parents("tr").data("info");
+        console.log(data);
+        if(this.id === "num_jia"){
+            var S_num =$(this).prev("#num_c").val();
+            ++S_num;
             if(S_num <=1){
                 S_num=1;
             }
-            $("#inputQuantity").attr("value",S_num);
-        }else if(this.id == "num_jian"){
-           S_num--;
+            data.c_pro_num = S_num;
+        }else if(this.id === "num_jian"){
+            var S_num =$(this).next("#num_c").val();
+            --S_num;
             if(S_num <=1){
                 S_num=1;
             }
-            $("#inputQuantity").attr("value",S_num);
+            data.c_pro_num = S_num;
+            $(this).prev("#num_c").attr("value",res.c_pro_num);
         }
-    })
-    var S_num=$("#inputQuantity").val();
-        $(".down").on("click",function(){
+        console.log(data);
+       $.ajax({
+            url:"../../server/cartsServer.php",
+            type:"post",
+            dataType:"json",
+            data:data,
+        }).then(function(res){
+            console.log(res);
             
+            $(this).prev("#num_c").attr("value",res.c_pro_num);
         })
-        $(".up").on("click",function(){
-         
-        })
+    })
+ 
     })
 
 
