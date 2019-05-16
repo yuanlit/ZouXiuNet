@@ -12,16 +12,17 @@ $(function(){
     var flag=true;
         //点击购买,加入购物车;并将数据存入后台;
         $("#user_buy_btn").on("click",function(){
-            if(flag){
-                flag=false;
-                var goods_data = $("#picBox").data("info"); //获取图片盒子中隐藏的商品信息
-                if(sessionStorage.getItem("userInfo") == null){
+            if(sessionStorage.getItem("userInfo") == null){
                 layer.tips('亲,请先登录哦~', $("#user_buy_btn"), {
                     tips: [1, '#3595CC'],
                     time: 4000,
                 });
                 return;
             }
+            if(flag){
+                flag=false;
+                var goods_data = $("#picBox").data("info"); //获取图片盒子中隐藏的商品信息
+                
             var u_id=JSON.parse(sessionStorage.getItem("userInfo"||'{}')).u_id;
             var SQLnum=0;
                         $.ajax({
