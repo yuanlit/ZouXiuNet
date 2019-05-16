@@ -23,7 +23,6 @@ display: none;
 cursor: move;
 z-index: 101;
 position: absolute;
-overflow: hidden;
 background:yellow;
 width: 241px;
 height: 241px;
@@ -35,14 +34,14 @@ left: 160px;
 #imgPicMask{
 position: absolute;
 top: 0px;
-left: 0px;
+left: -100px;
 z-index: 1;
 display: block;
 }
 /*大图的盒子*/
 #bigPicDiv{
-overflow: hidden;
 z-index: 100;
+overflow: hidden;
 top: 0px;
 position: absolute;
 width: 402px;
@@ -89,7 +88,6 @@ width:1000px;
 }
 .con_main{
 width:100%;
-overflow:hidden;
 clear:both;
 /* margin-bottom: 30px; */
 }

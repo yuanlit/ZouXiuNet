@@ -47,7 +47,22 @@
             })
         });
 
-
+        //设置商品的数量控制
+        var S_num=$("#inputQuantity").val();
+        $(".down").on("click",function(){
+            S_num--;
+            if(S_num <=1){
+                S_num=1;
+            }
+            $("#inputQuantity").attr("value",S_num);
+        })
+        $(".up").on("click",function(){
+            S_num++;
+            if(S_num <=1){
+                S_num=1;
+            }
+            $("#inputQuantity").attr("value",S_num);
+        })
 
 
 
