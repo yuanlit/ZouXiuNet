@@ -70,7 +70,7 @@
                 //以下,发送到后台
                 var index;
                 $.ajax({
-                    url: "http://127.0.0.1/xiunet/server/registerServer.php",
+                    url: "../../server/registerServer.php",
                     type: "post",
                     dataType: "json",
                     data: $("form").serialize(),

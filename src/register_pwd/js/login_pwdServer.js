@@ -43,9 +43,9 @@
 
                         let timer= setTimeout(function(){
                             layer.close(index);
-                            window.open(url="../../dist/index.html");
+                            window.location="../index_page/index.html";
                             clearInterval(timer)
-                        },2000);
+                        },1000);
                     }else{
                        layer.alert(res.msg, {
                             icon: 2,

@@ -11,8 +11,7 @@
                         });
                     });
             }else{
-                $(".blue").attr("href","../../dist/index.html");
-
+                $(".blue").attr("href","../index_page/index.html");
             }
     window.onload=function(){
      $.ajax({
@@ -31,27 +30,50 @@
                         $("#loginZone").append("<a >欢迎<span style='color:#1098EC;margin:0 10px;font-size:16px'>" + oSession.u_name + "</span></a>");
                            //获取用户加购的所有商品
                         var u_id=ouInfo.u_id;
-                        console.log(u_id)
                         $.ajax({
-                            url:'../../server/cartlistByUId.php',
+                            url:'../../server/cartlistByUId.php', //通过此端口调回当前id加购的全部商品
                             data:{u_id},
                         }).then(function(res){
+                        console.log(res);
+                        var result_num=0;   //声明一个所有商品总数
                         $("#shopping-cart").remove();
                         $(".elements_list").css("display","block");
+                        $("#zhuijia").css("display","block");
                         res.forEach(element=> {
-                            console.log(element);
-                            let str= "<tr><td><img src="+element.c_pro_img+" alt=''></td><td>"+element.c_pro_name+"</td><td>"+element.c_pro_price+"</td><td>"+element.c_pro_num+"</td><td>"+element.c_pro_total+"</td><td><button id='del_S'>移除</button></td></tr>";
+                            result_num += element.c_pro_num-0;
+                            let str= "<tr><td><img src="+element.c_pro_img+" alt=''></td><td>"+element.c_pro_name+"</td><td>"+element.c_pro_price+"</td><td><button id='num_jia'>"+'＋'+"</button>"+element.c_pro_num+"<button id='num_jian'>"+'－'+"</button></td><td>"+element.c_pro_total+"</td><td><button onclick=del("+element.c_id+",this) id='del_S'>移除</button></td></tr>";
                             $("#tab_list").append(str);
                         });
-
-                        
+                        console.log(result_num);  //所有商品的总数
                         })
                     }
                 }
             })
     }
-
-  
-
     })
 })(jQuery);
+function del(c_id,obj){
+
+    $.ajax({
+        url:"http:../../server/deleteByC_Id.php",
+        type:"post",
+        data:{'c_id':c_id},
+        dataType:"json",
+    }).done(function(res){
+        console.log(111)
+        if(res.status ==1){
+            layer.alert('删除成功', {
+                skin: 'layui-layer-lan'
+                ,closeBtn: 0
+                ,anim: 3 //动画类型
+              });
+            $(obj).parents("tr").remove();
+        }else{
+            layer.alert('删除失败', {
+                skin: 'layui-layer-lan'
+                ,closeBtn: 0
+                ,anim: 4 //动画类型
+              });
+        }
+    })
+    }

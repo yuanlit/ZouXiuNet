@@ -21,7 +21,7 @@ $(function(){
             }
             if(flag){
                 flag=false;
-                var goods_data = $("#picBox").data("info"); //获取图片盒子中隐藏的商品信息
+            var goods_data = $("#picBox").data("info"); //获取图片盒子中隐藏的商品信息
                 
             var u_id=JSON.parse(sessionStorage.getItem("userInfo"||'{}')).u_id;
             var SQLnum=0;

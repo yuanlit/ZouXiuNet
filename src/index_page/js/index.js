@@ -14,11 +14,11 @@
                         });
                     });
             }else{
-                $(".cart_list").attr("href","../src/shopping_trolley/shopping_trolley.html");
+                $(".cart_list").attr("href","../shopping_trolley/shopping_trolley.html");
             }
 
             $.ajax({
-                url:"../server/checkeLogin.php",
+                url:"../../server/checkeLogin.php",
             }).then(function(res){
                 var oSession = res.data;  //直接拿到session返回的数据;
                 //var str = JSON.stringify(res.data);

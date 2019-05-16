@@ -1,5 +1,6 @@
 /*公有样式*/
 *{margin: 0 ; padding:0;}
+input,button{outline:none;}
 body{
 font: 12px/1.5  宋体, sans-serif;
 color: #5b5b5b;
@@ -173,7 +174,36 @@ width: 100%;
     width: 60px;
     height: 30px;
 }
-
+#zhuijia{
+    display: block;
+    width: 150px;
+    padding: 0;
+    margin-left: 50px;
+    height: 30px;
+    font: 14px/30px "宋体";
+    background: linear-gradient(to right top, #82bf38, #F6F6F6, #F26521);
+    color: rgba(0, 0, 0, 0.822);
+    text-align: center;
+    border-radius: 10px;
+    transform:translateY(-7px);
+    font-weight: 700;
+    display: none;
+}
+#num_jian,#num_jia{
+    margin: 5px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    line-height: 24px;
+    font-size: 20px;
+    background: radial-gradient( #cccccc, #fff); 
+    border-radius: 50%;
+    text-align: center;
+    filter:chroma(color=#000000);
+}
+.layui-layer-lan{
+    background: #F26521;
+}
 
 
 
