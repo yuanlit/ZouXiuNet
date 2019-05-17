@@ -80,7 +80,7 @@ function del(c_id,obj){
                             ",this) id='del_S'>移除</button></td></tr>";
                             $("#tab_list").append(str);
                         });
-                        let str_res ="<tr><td><input type='checkbox' id='checkbox_SR'><label for='checkbox_SR' id='quanxuan'>全选</label></td></tr>";
+                        let str_res ="<tr><td><input type='checkbox' id='checkbox_SR'><label for='checkbox_SR' id='quanxuan'>全选</label></td><td></td><td></td><td></td><td>合计</td><td></td><td><button id='jiesuan'>结算</button></td></tr>";
                         $("#tab_list").append(str_res);
                         console.log("所有商品总数"+result_num);  //所有商品的总数
                         })
@@ -133,21 +133,15 @@ function del(c_id,obj){
         })
     })
  // 控制商品选择情况
-// $("#tab_list").on("click","#checkbox_SR",function(){
-//     var ops =  $(this).is(":checked");
-    
-//     if ( $(this).is(":checked")){
-//         console.log($(".checkbox_S")); 
-//         $(".checkbox_S").attr("checked",'true');
-//     }else if(!( $(this).is(":checked"))){
-//         console.log("全不选");  
-//         $(".checkbox_S").attr("checked",'false'); 
-//     }
-// })
-
-    })
-
-    
+$("#tab_list").on("click","#checkbox_SR",function(){
+    let ops =  $(this).is(":checked");
+    console.log(ops);
+    for(let i = 0 ; i < $(".checkbox_S").length; i ++){
+        console.log(i);
+        $(".checkbox_S")[i].checked=ops;
+    }
+})
+})
 })(jQuery);
 
 
