@@ -67,11 +67,10 @@ function del(c_id,obj){
                         $(".elements_list").css("display","block");
                         $("#zhuijia").css("display","block");
                         res.forEach(element=> {
-                            console.log(element);
                             let str_info=JSON.stringify(element)
                             result_num += element.c_pro_num-0;
                             let str= "<tr data-info="+str_info+
-                            "><td><img src="+element.c_pro_img+
+                            "><td><input type='checkbox' class='checkbox_S'></td><td><img src="+element.c_pro_img+
                             " alt=''></td><td>"+element.c_pro_name+
                             "</td><td>"+element.c_pro_price+
                             "</td><td><button id='num_jian' class='c_num'>"+'－'+
@@ -81,6 +80,8 @@ function del(c_id,obj){
                             ",this) id='del_S'>移除</button></td></tr>";
                             $("#tab_list").append(str);
                         });
+                        let str_res ="<tr><td><input type='checkbox' id='checkbox_SR'><label for='checkbox_SR' id='quanxuan'>全选</label></td></tr>";
+                        $("#tab_list").append(str_res);
                         console.log("所有商品总数"+result_num);  //所有商品的总数
                         })
                     }
@@ -131,9 +132,20 @@ function del(c_id,obj){
             loading();
         })
     })
- 
-    })
+ // 控制商品选择情况
+// $("#tab_list").on("click","#checkbox_SR",function(){
+//     var ops =  $(this).is(":checked");
+    
+//     if ( $(this).is(":checked")){
+//         console.log($(".checkbox_S")); 
+//         $(".checkbox_S").attr("checked",'true');
+//     }else if(!( $(this).is(":checked"))){
+//         console.log("全不选");  
+//         $(".checkbox_S").attr("checked",'false'); 
+//     }
+// })
 
+    })
 
     
 })(jQuery);

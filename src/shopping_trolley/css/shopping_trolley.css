@@ -167,6 +167,9 @@ background-origin: border-box;
     font-weight: 700px;
     color: #151515;
 }
+.elements_list>table>tbody{
+    border: 1px solid #5b5b5b;
+}
 .elements_list>table>tbody>tr{
     border-bottom: 1px solid #b3ab41;
 }
@@ -249,6 +252,7 @@ background-origin: border-box;
 
 
 
+
 .set_far{
 padding-top: 35px;
 padding-bottom: 10px;
@@ -290,4 +294,34 @@ text-align: center;
 width: 950px;
 border-top: 1px solid #999;
 padding-top: 10px
+}
+
+
+.checkbox_S{
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-left:60px; 
+    background: #F6F6F6;
+    border-radius: 20%;
+}
+#checkbox_SR{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: #F6F6F6;
+    border-radius: 20%;  
+    margin-top: 30px;
+    margin-left: 34px;
+}
+#quanxuan{
+    color: orangered;
+    line-height: 40px;
+    display: inline-block;
+    height: 40px;
+    transform: translateY(-4px);
+    font-weight: 700;
+    font-size: 20px;
 }
