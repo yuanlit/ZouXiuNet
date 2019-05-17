@@ -28,7 +28,6 @@ $(function(){
                             data:{u_id},
                         }).then(function(res){
                         //需要获取同一用户的所有商品数量
-                    
                         var res_num=0;
                         res.forEach(function(value,index,array){
                             res_num += Number(res[index].c_pro_num);
