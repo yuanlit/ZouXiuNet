@@ -186,6 +186,12 @@ border-bottom: 2px solid #727071;
 #header .header .hd_butBox .nav1 li .active{
 border-bottom: 2px solid #727071;
 }
+#quit{
+    position: absolute;
+    left: 0px;
+    top:25px;
+    color: red;
+}
 
 /**********************下面的导航********************/
 #header .nav_box{

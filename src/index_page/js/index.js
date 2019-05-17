@@ -1,6 +1,8 @@
 ;(function($){
     $(function(){
 
+
+
         window.onload=function(){
             //登录页面跳转状态
             var uInfo=sessionStorage.getItem("userInfo");
@@ -32,10 +34,19 @@
                         $(".toplink>li:eq(2)>a").remove();
                         $(".toplink>li:eq(1)").append("<a style='color:blue;font-size: 20px;text-shadow:.5px .5px blue;position:fixed;left:58px;top: 40px;z-index:100;'>购物车&nbsp;&nbsp;自动隐藏&nbsp;!&nbsp;&nbsp;,整个走秀都是你的!</a>");
                     } else {
-                        $(".toplink>li:eq(0)").append("<a >欢迎<span style='color:#1098EC;margin:0 10px;font-size:16px'>" + oSession.u_name + "</span></a>");
+                        $(".toplink>li:eq(0)").append("<a >欢迎<span style='color:#1098EC;margin:0 10px;font-size:16px'>" + oSession.u_name + "</span></a><a id='quit' href='javaScript:;'>退出登录</a>");
                     }
                 }
             })
         }
+   
+    $(".header").on("click","#quit",function(){        
+        sessionStorage.clear();
+        location.reload(); 
+    })
+
+
+    // $("img").lazyload({effect: "fadeIn"});
+
     })
 })(jQuery);
